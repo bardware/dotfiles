@@ -77,4 +77,3 @@ defscrollback 5000
 hardstatus alwayslastline "%= %-w%{= BW}%n*%t%{-}%+w %="
 caption always "[ %H ][%= %3n %t%? [%h]%? %=][ %d.%m.%Y %c ]"
 
-
