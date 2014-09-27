@@ -1,0 +1,80 @@
+startup_message off
+
+nonblock on
+altscreen on
+# term screen-256color
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+
+# Remove some key bindings
+bind ^B
+bind ^C
+bind d
+bind ^D
+bind ^F
+bind ^H
+bind i
+bind k
+bind l
+bind ^L
+bind n
+bind N
+bind ^N
+bind p
+bind ^P
+bind ^R
+bind s
+bind ^S
+bind t
+bind ^T
+bind x
+bind ^X
+bind z
+bind ^Z
+bind ^[
+bind ^]
+bind ^?
+bind ^@
+bind \
+bind {
+bind }
+
+# New key bindings
+bind a screen
+bind D detach
+bind H history
+bind K kill
+bind L lockscreen
+bind n number
+bind Q quit
+bind R redisplay
+# bind V split -v
+bind ^Z suspend
+bind = resize =
+bind + resize +1
+bind * resize +9
+bind - resize -1
+bind _ resize -9
+bind / resize max
+
+bindkey -k F1 prev
+bindkey -k F2 next
+
+bind c screen 1
+bind 0 select 10
+screen 1
+screen -t top 2 top
+screen -t mc 3 nice mc
+screen 4
+screen 5
+screen 6
+
+select 1
+
+defscrollback 5000
+
+hardstatus alwayslastline "%= %-w%{= BW}%n*%t%{-}%+w %="
+caption always "[ %H ][%= %3n %t%? [%h]%? %=][ %d.%m.%Y %c ]"
+
+
