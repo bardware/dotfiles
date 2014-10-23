@@ -209,4 +209,7 @@ alias ls="ls -Glah"
 export CLICOLOR=1
 # Set "ls" colors
 export LSCOLORS=Gxfxcxdxbxegedabagacad
-
+if [[ -f /etc/bash_completion.d/git ]]
+then
+  source /etc/bash_completion.d/git
+fi
