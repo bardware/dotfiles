@@ -1,3 +1,5 @@
+set encoding=utf-8
+scriptencoding utf-8
 syntax on
 let html_number_lines=1
 let html_use_css=1
@@ -14,6 +16,10 @@ highlight lCursor guibg=Cyan guifg=NONE
 highlight NonText guibg=grey80
 highlight Constant gui=NONE guibg=grey95
 highlight Special gui=NONE guibg=grey95
+highlight SpecialKey term=standout ctermbg=yellow guibg=yellow
+highlight RedundantSpaces term=standout ctermbg=Grey guibg=#ffddcc " Highlight special characters in yellow:
+
+call matchadd('RedundantSpaces', '\(\s\+$\| \+\ze\t\|\t\zs \+\)\(\%#\)\@!')
 
 fun! MySys()
    return "$1"
@@ -106,6 +112,8 @@ set wildmenu " Hitting TAB in command mode will show possible completions above 
 set wildmode=list:longest " Complete only until point of ambiguity.
 set winminheight=0 "Allow splits to be reduced to a single line.
 set wrapscan " Searches wrap around end of file
+set list
+set listchars=eol:$,tab:➪\ ,trail:•,extends:»,precedes:«,nbsp:× " How to show whitespace characters when list is se
 
 " Status Line
 " hi User1 guibg=#455354 guifg=fg      ctermbg=238 ctermfg=fg  gui=bold,underline cterm=bold,underline term=bold,underline
@@ -146,7 +154,7 @@ imap VV ?
 imap aa ?
 
 " Toggle show tabs and trailing spaces (,c)
-" bd set lcs=tab:�\ ,trail:�,eol:�,nbsp:_
+" bd set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_
 set fcs=fold:-
 nnoremap <silent> <leader>c :set nolist!<CR>
 
