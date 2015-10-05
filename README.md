@@ -8,3 +8,9 @@ don't forget to
 `git submodule init`
 `git submodule update`
 `git submodule update --init --recursive`
+
+generate dotfiles and symlinks
+`chmod u+x makesymlinks.sh`
+
+eventually pull latest masters
+`git submodule update --remote`
