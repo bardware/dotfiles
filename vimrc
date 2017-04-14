@@ -255,7 +255,7 @@ filetype plugin indent on
 " Set syntax highlighting options.
 set t_Co=256
 set background=dark
-colorscheme badwolf
+colorscheme gruvbox
 
 " JSON
 au BufRead,BufNewFile *.json set ft=json syntax=javascript

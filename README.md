@@ -7,6 +7,7 @@ don't forget to
 `git submodule update --recursive`
 `git submodule init`
 `git submodule update`
+`$ cd dotfiles`
 `git submodule update --init --recursive`
 
 generate dotfiles and symlinks
@@ -14,3 +15,4 @@ generate dotfiles and symlinks
 
 eventually pull latest masters
 `git submodule update --remote`
+
