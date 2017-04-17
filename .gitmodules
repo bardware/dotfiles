@@ -41,7 +41,7 @@
 	path = vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 [submodule "liquidprompt"]
-	path = vim/bundle/liquidprompt
+	path = liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
 [submodule "vim/bundle/gruvbox"]
 	path = vim/bundle/gruvbox
