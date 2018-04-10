@@ -46,3 +46,6 @@
 [submodule "vim/bundle/gruvbox"]
 	path = vim/bundle/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
+[submodule "vim/bundle/vim-coldfusion"]
+	path = vim/bundle/vim-coldfusion
+	url = git@github.com:ernstvanderlinden/vim-coldfusion.git
